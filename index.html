@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Simulador de Registro de Pacientes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Pacientes</h1>
+
+        <form id="pacienteForm" class="formulario">
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required placeholder="Ingrese el nombre del paciente">
+            </div>
+
+            <div class="input-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required placeholder="Ingrese el apellido del paciente">
+            </div>
+
+            <div class="input-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" required placeholder="Ingrese la edad del paciente">
+            </div>
+
+            <div class="input-group">
+                <label for="sintomas">Síntomas (separados por comas):</label>
+                <input type="text" id="sintomas" required placeholder="Ingrese los síntomas separados por comas">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-registrar">Registrar Paciente</button>
+                <button type="button" id="borrarBtn" class="btn-borrar">Borrar lista de pacientes</button>
+            </div>
+        </form>
+
+        <h2>Pacientes Registrados</h2>
+        <ul id="listaPacientes" class="lista-pacientes"></ul>
+    </div>
+
+    <script src="js/simulador.js"></script>
+</body>
+</html>
